@@ -21,12 +21,13 @@ public class People {
     private LocalDateTime debutDate;
     private LocalDateTime finalgameDate;
     private LocalDateTime deathDate;
+    private int salario;
 
     
 
     public People(String playerID, String birthCountry, String birthCity, String deathCountry, String deathCity,
 			String nameFirst, String nameLast, Integer weight, Integer height, String bats, String throwString,
-			LocalDateTime birthDate, LocalDateTime debutDate, LocalDateTime finalgameDate, LocalDateTime deathDate) {
+			LocalDateTime birthDate, LocalDateTime debutDate, LocalDateTime finalgameDate, LocalDateTime deathDate, int salario) {
 		super();
 		this.playerID = playerID;
 		this.birthCountry = birthCountry;
@@ -43,7 +44,22 @@ public class People {
 		this.debutDate = debutDate;
 		this.finalgameDate = finalgameDate;
 		this.deathDate = deathDate;
+		this.salario=salario;
 	}
+
+    
+    
+	public int getSalario() {
+		return salario;
+	}
+
+
+
+	public void setSalario(int salario) {
+		this.salario = salario;
+	}
+
+
 
 	public String getPlayerID(){
         return playerID;
